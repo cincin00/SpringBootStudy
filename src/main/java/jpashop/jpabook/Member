@@ -1,0 +1,17 @@
+package jpashop.jpabook;
+
+import javax.persistenece.Entitiy;
+import javax.persistenece.GeneratedValue;
+import javax.persistenece.Id;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Entitiy
+@Getter @Setter
+public class Member {
+    @Id @GeneratedValue
+    @Column(name = "member_seq")
+    private Long id;
+    //private String username;
+}
